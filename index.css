@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media(min-width:780px) and (max-width:1800px){
+    .Reaction .table a{
+        font-size: 2.8rem;
+    }
+    .Reaction{
+        height: 75px;
+        width: 10%;
+        background-color: #183b56;
+    }
+}
+
+/* Tablet Screen */
+@media(min-width:425px) and (max-width:780px){
+    .nav-links{
+        display: none;
+    }
+    
+    .search-bar button{
+        font-size: xx-small;
+        transition: all 2s;
+    }
+    .Reaction .table a{
+        font-size: 2.5rem;
+    }
+    .Reaction{
+        height: 65px;
+        transition: all 1s;
+    }
+}
+
+/* Mobile Screen */
+@media(min-width:124px) and (max-width:425px){
+    .nav-links{
+        display: none;
+    }
+    .search-bar input{
+        transition: all 1s;
+        width: 8rem;
+    }
+    .search-bar button{
+        display: none;
+    }
+    .card{
+        font-size: small;
+    }
+    .card-content h3{
+        font-size: 1rem;
+    }
+    .card-content h6{
+        font-size: 0.5rem;
+    }
+    .card-content p{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    .Reaction{
+        height: 45px;
+    }
+    .Reaction .table a{
+        font-size: 1.8rem;
+    }
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-text-color);
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd0e2;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.main-nav {
+    justify-content: space-between;
+    padding-block: 8px;
+}
+
+.company-logo img {
+    width: 120px;
+}
+
+.nav-links ul {
+    gap: 16px;
+}
+
+.hover-link {
+    cursor: pointer;
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+    color: red;
+}
+
+.nav-item.active {
+    color: var(--accent-color);
+}
+
+.search-bar {
+    height: 32px;
+    gap: 8px;
+}
+
+.search-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover {
+    background-color: var(--accent-color-dark);
+}
+
+main {
+    padding-block: 20px;
+    margin-top: 80px;
+}
+
+.cards-container {
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 50rem;
+    min-height: max-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 10 12px 14px rgba(0, 0, 0, .1), 10 10px 16px rgba(0, 0, 0, .1);
+    background-color: #f9fdff;
+    transform: translateY(-6px);
+    background: #f0f2f5;
+
+}
+
+.card-header img {
+    width: 100%;
+    object-fit: cover;
+}
+.card-header img{
+    border-radius: 20px;
+}
+#news-source{
+   color: grey;
+   font-weight: 400;
+}
+.news-desc{ 
+    font-weight: 100;
+  color: rgb(79, 79, 79);
+ 
+}
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
+.ReactionParent{
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1); */
+    padding-bottom:3% ;
+    z-index: +5;
+}
+.Reaction{
+    border-radius: 50px;
+    /* margin-top: 5%; */
+    padding-top: 2px;
+    /* background-color: #93dbff; */
+    background: #f0f2f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    z-index: +2;
+}
+.Reaction .table{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Reaction .table a{
+    text-decoration: none;   
+}
+

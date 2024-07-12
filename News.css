@@ -1,0 +1,99 @@
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville&family=PT+Sans+Narrow&family=Poppins:wght@200;400&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+font-family: 'PT Sans Narrow', sans-serif;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+.cardParent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width:40%;
+}
+
+ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .fetch {
+    background-color: white;
+    text-align: justify;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    padding: 6%;
+    border-radius: 10px;
+  }
+  .fetch h2{
+    font-weight: bold;
+    word-spacing: -1px;
+}
+.fetch .atpub{
+    color: rgb(155, 155, 155);
+}
+.fetch .author{
+    color: rgb(108, 108, 108);
+}
+.fetch img{
+    border-radius: 8px;
+}
+.fetch .heading{
+    color: rgb(111, 111, 111);
+    margin-top: 5%;
+    font-size: large;
+    font-weight: 100;
+}
+  .news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .news-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .news-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .news-content {
+    padding: 10px;
+  }
+  
+  .news-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .news-description {
+    color: #555;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .news-container {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    }
+  }
+  
