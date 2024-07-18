@@ -1,6 +1,6 @@
 ## NewsAPI
 ### Overview
-<i style="color: grey;"> NewsAPI is a web application that utilizes JavaScript, HTML, and CSS to fetch and display news articles from an external API. </i>
+<i> NewsAPI is a web application that utilizes JavaScript, HTML, and CSS to fetch and display news articles from an external API. </i>
 
 ### Features
 ##### Fetches news data from a third-party API.
